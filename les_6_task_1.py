@@ -80,8 +80,9 @@ def mem_matrix_min_ver_3(matrix):
     """
     max_in_min = max([min(arr) for arr in zip(*matrix)])
 
-    print(memory_needed({'zip': zip(*matrix)})) # проверено, всего 56 байт при ширине матрицы 300, а высоте 500.
-    print(memory_needed({'arr': [min(arr) for arr in zip(*matrix)]})) # проверено, всего 2528 байт при ширине матрицы 300, а высоте 500.
+    print(memory_needed({'zip': zip(*matrix)}))  # проверено, всего 56 байт при ширине матрицы 300, а высоте 500.
+    print(memory_needed({'arr': [min(arr) for arr in
+                                 zip(*matrix)]}))  # проверено, всего 2528 байт при ширине матрицы 300, а высоте 500.
     return memory_needed(locals())
 
 
