@@ -126,6 +126,7 @@ def finder1(size: int):
 
 """
 
+
 # По выводу cProfile вижу, что алгоритм имеет сложность O(2n) в связи с тем, что вначале элементы добавляются в цикле,
 # а потом происходит проверка по условию. Собственно, как оказалось, операция randint занимает больше всего времени.
 
@@ -148,6 +149,7 @@ def finder2(size: int):
             num = array[i]
 
     return frequency, num
+
 
 # print(timeit('finder2(10)', number=100, globals=globals()))  # 0.010421199999999992
 # print(timeit('finder2(100)', number=100, globals=globals()))  # 0.21629310000000002
@@ -217,6 +219,7 @@ run('finder2(1000)')
      1051    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
 """
 
+
 # По данным выводам так же видно, что основное время происходит генерация данных при помощи randint
 
 
@@ -242,6 +245,7 @@ def finder3(size: int):
             max_item = item
 
     return dict_[max_item], max_item
+
 
 # print(finder3(10))  на случай важных тестов
 
