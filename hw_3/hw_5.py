@@ -8,7 +8,6 @@ SIZE = 10_000
 MIN_ITEM = -100_000_000
 MAX_ITEM = 100_000_000
 array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
-# print(array)
 
 max_min_item_index = 0
 

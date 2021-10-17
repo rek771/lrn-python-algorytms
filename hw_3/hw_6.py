@@ -20,7 +20,8 @@ for i, item in enumerate(array):
         max_index = i
 
 summ = 0
-for i in range(min_index+1, max_index):
+for i in range(min_index + 1, max_index):
     summ += array[i]
 
-print(f'Минимальный элемент под индексом {min_index}, а максимальный под индексом {max_index}. Сумма между ними - {summ}.')
+print(
+    f'Минимальный элемент под индексом {min_index}, а максимальный под индексом {max_index}. Сумма между ними - {summ}.')
