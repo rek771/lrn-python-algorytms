@@ -11,14 +11,13 @@ count_enterprises = int(input('Введите количество предпр�
 
 enterprises = Counter()
 for i in range(count_enterprises):
-    name = input(f'Введите название предприятия №{i+1}: ')
+    name = input(f'Введите название предприятия №{i + 1}: ')
     for j in range(4):
-        enterprises[name] += int(input(f'Введите выручку предприятия за {j+1} квартал: '))
-
+        enterprises[name] += int(input(f'Введите выручку предприятия за {j + 1} квартал: '))
 
 max_values = deque()
 min_values = deque()
-middle = sum(enterprises.values())/len(enterprises.items())
+middle = sum(enterprises.values()) / len(enterprises.items())
 
 print('Вы ввели компании:')
 
@@ -39,6 +38,5 @@ for name in max_values:
 print(f'Компании со средней выручкой ниже среднего ({middle}):')
 for name in min_values:
     print(name)
-
 
 # from collections import namedtuple не придумал как реализовать в задаче :(((((
